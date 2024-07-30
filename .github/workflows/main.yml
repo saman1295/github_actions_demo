@@ -23,9 +23,6 @@ jobs:
     - name: Install dependencies
       run: |
         make install
-    - name: Code formatting with black
-      run: |
-       black *.py
     - name: Lint with pylint
       run: |
         make lint
