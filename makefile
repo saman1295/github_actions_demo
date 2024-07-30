@@ -8,9 +8,9 @@ format:
 	black *.py
 
 lint:
-	pylint test/script.py
+	pylint tests/script.py
 
 test:
-	python -m pytest test/test_*.py
+	python -m pytest tests/test_*.py
 
 all: install lint test format 
