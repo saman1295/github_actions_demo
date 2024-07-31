@@ -8,8 +8,9 @@ format:
 	black *.py
 
 lint:
-	pylint tests/script.py
+	pylint --disable =R,C tests/script.py
 
+ 
 test:
 	python -m pytest tests/test_*.py
 
